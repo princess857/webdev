@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nvigation Bar</title>
+    <style>
+        :root{
+            --bg1: rgba(150, 56, 75, 0.872);
+            --cols: beige;
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 1px solid;
+            min-height: 80px;
+            padding: 10px;
+            margin: 10px;
+            display: grid;
+            grid-template-columns: auto;
+            align-items: center;
+            /* justify-content: space-between; */
+            justify-content: space-around;
+            background-color: var(--bg1);
+            color: var(--cols);
+            gap: 10px;
+        }
+
+        .divi{
+            font-family: serif;
+            font-size: 50px;
+        }
+
+        .navi_2{
+            display: flex;
+            list-style-type: none;
+            gap: 8px;
+        }
+
+        .navi_2 a{
+            text-decoration: none;
+            color: var(--cols);
+        }
+
+        .navi_2 a:hover{
+            color: rgba(255, 0, 255, 0.683);
+        }
+
+         @media(max-width: 480px) {
+            .container{
+                grid-template-columns: auto;
+                background-color: orangered;
+            }
+        }
+
+        
+        @media(min-width:768px) {
+            .container{
+            grid-template-columns: auto auto;
+            background-color: rgb(174, 68, 84);
+        }
+    }
+
+       
+        @media(min-width: 1024px) {
+            .container{
+                grid-template-columns: auto auto auto;
+                background-color: blueviolet;
+            }
+        }
+
+    
+        @media screen and (min-width: 1200px) {
+            .container{
+                grid-template-columns: auto auto auto auto;
+                background-color: greenyellow;
+            }
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <nav class="container">
+            <div class="divi">Chinwe A.</div>
+            <ul class="navi_2">
+             <li><a href="home">Home</a></li>
+             <li><a href="about">About</a></li>
+             <li><a href="skills">Skill</a></li>
+             <li><a href="contact">Contact</a></li>
+            </ul>
+        </nav>
+    </header>
+</body>
+</html>

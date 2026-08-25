@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            border: 1px solid black;
+            height: 200px;
+            width: 200px;
+            border-radius: 70%;
+            
+            animation-name: animate;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 0.5s;
+            animation-iteration-count: infinite;
+            animation-direction: alternate-reverse;
+            animation-fill-mode: both;
+        }
+
+        @keyframes animate{
+            0%{
+                background-color: purple;
+                transform: translateX(0px);
+            }
+            25%{
+                background-color: deeppink;
+                transform: translateX(80px);
+            }
+            50%{
+                background-color: blueviolet;
+                transform: translateY(-50px);
+            }
+            75%{
+                background-color: hotpink;
+                transform: translateY(75px);
+            }
+            100%{
+                background-color: fuchsia;
+                transform: translateY(-100px);
+            }
+
+           
+        }
+    </style>
+</head>
+<body>
+    <div></div>
+</body>
+</html>

@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Selectors and Combinators</title>
+    <style>
+         /* background-color: brown; */
+         p,div{
+            color: blue;
+         }
+          #divi,.divc,#divi2{
+            background-color: coral;
+          }
+          input[name]{
+            background-color: aqua;
+          }
+          input[name='password']{
+            background-color: red;
+          }
+          .divi3 p,h1{
+            background-color: purple;
+          }
+          .divi3 + p{
+            color: gold;
+          }
+    </style>
+</head>
+<body>
+    <h1>Hello World</h1>
+    <p>love coding</p>
+    <div id="divi">wooooo</div>
+    <div class="divc">wooooo</div>
+    <div id="divi2">woooo</div>
+    <input type="password" name="password" id=""> <br>
+    <input type="text" name="text" id="">
+    <div class="divi3">
+        <h1>heading 1</h1>
+        <p>para</p>
+        <div>
+          <p>para 2</p>
+        </div>
+    </div>
+
+    <p>paragraph</p>
+    <p>paragraph</p>
+
+</body>
+</html>

@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        /* ul>li:first-child{
+            color: blue;
+        }
+        ul>li:last-child{
+            color: blue;
+        }
+        ul>li:nth-child(3){
+            color: darkred; */
+        /* ul > .classy:not(.classi){
+          color: brown;
+        } */
+        input:focus{
+            background-color: blueviolet;
+            color: black;
+        }
+        .classy{
+            list-style-type: none;
+        }
+        .classi1::before{
+            content: url('listicon.png.png');
+        }
+        .classi2::after{
+            content: url('listicon2.png.png');
+        }
+        ::selection{
+            background-color: darkmagenta;
+            color: black;
+        }
+        ::marker{
+           color: crimson;
+        }
+        .para1::first-line{
+            color: greenyellow;
+        }
+        .para1::first-letter{
+            color: orangered;
+        }
+        /* input:focus[password]{
+            background-color: green;
+            color: black;
+        } */
+    </style>
+</head>
+<body>
+    <h1>Pseudoclass</h1>
+    
+    <ul>
+        <li class="classi">list1</li>
+        <li class="classie classi">list2</li>
+        <li class="classi">list3</li>
+        <li class="classi">list4</li>
+    </ul>
+
+    <div>
+        <p>para1</p>
+        <p>headi 1</p>
+    </div>
+    <input type="text" name="text">
+    <input type="password" name="password">
+
+     <ol>
+        <li class="classi classi1">Home</li>
+        <li class="classie classi2">About</li>
+        <li class="classi classi3">Contact</li>
+        <li class="classi classi4">Signup</li>
+     </ol>
+
+     <p class="para1">Lorem ipsum dolor sit amet consectetur adipisicing elit. Odio ab, at autem minus esse molestias officia iste fugit itaque doloremque impedit vero. Iure incidunt dolorem temporibus doloribus, ratione qui quo.</p>
+
+</body>
+</html>

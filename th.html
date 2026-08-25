@@ -1,0 +1,173 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>About me</title>
+
+    <style>
+        body{
+            background-color: bisque
+            color: black;
+            font-family: Arial, Helvetica, sans-serif;
+        }
+
+         h1{
+            background-color: firebrick;
+            color: white;
+            text-align: center;
+         }
+
+         h2{
+            background-color: burlywood;
+            color: black;
+            text-align: left;
+         }
+
+         h3{
+            background-color: darkred;
+            color: whitesmoke;
+            font-size: larger;
+         }
+
+         h4{
+            background-color: indianred;
+            color: black;
+            font-size: larger;
+         }
+
+         h5{background-color: crimson;
+            color: black;
+            font-size: larger;
+
+         }
+
+         h6{
+            background-color: coral;
+            color: black;
+            font-size: larger;
+         }
+
+         .about-container{
+            display: flex;
+            align-items: flex-start;
+            justify-content: space-between;
+            gap: 20px;
+         }
+
+        .profile-pic{
+            width: 100px;
+            height: 100px;
+            border-radius: 10px;
+            border: 3px solid;
+            flex-shrink: 0;
+            float: right;
+            margin-left: 20px;
+            margin-bottom: 40px;
+        }
+    </style>
+
+</head>
+<body>
+    <header>
+        <h1><strong>CHINWE ACHOR- Student Portfolio</strong></h1>
+        <nav>
+            <a href="Home">Home</a>
+            <a href="About">About</a>
+            <a href="Skills">Skills</a>
+            <a href="Project">Project</a>
+            <a href="Contact">Contact</a>
+        </nav>
+    </header>
+    <main>
+        <div>
+            <section id="Home">
+                <h2><b>Home</b></h2>
+                <p>Hi i am Chinwe Achor, A passionate Web Development Student at Webcapz Technologies. I enjoy turning creative ideas into clean, responsive, and user-friendly websites. I specialize in building websites with <b><em>HTML, CSS, and Javascript</em></b> that work perfectly on both desktop and mobile devices. My goal is to keep learning, improving my coding skkills daily, and create digital experiences that solve real problems. Welcome to my portfolio. Feel free to explore my projects and get in touch with me.</p>
+
+            </section>
+        </div>
+        <div>
+            <section id="About">
+                <h3><b id="Chinwe">About Me</b></h3>
+                <img src="image.png" alt="My Photo" class="profile-pic">
+                <P>I fell in love with web development the first time i changed one line of code and watched a whole webpage update instantly. <br>I am Chinwe Achor, and I am learning at <mark><em>Webcapz Technology in Port Harcourt</em></mark>. What I love coding is that it mixes logic and creativity. <b><i>HTML gives structure, CSS add beauty, and Javascript brings it to life</i></b>. I enjoy solving problems and buildingthings that help people. <br>Outside of code, I believe good design should feel simple. My goal is keep learning daily, ships real projects, and grow into a developer who builds products people actaully love to use.</P>
+            </section>
+
+            <section id="Skills">
+                <h4><b id="">My Skills</b></h4>
+                <p>I am building a strong foundation in modern frontend development. I focus writing clean, semantic, and accessible code that works across all devices. I enjoy turning designs into real,responsive websites and continous learning best practices. My skills are:</p>
+                <Ul>
+                    <li><strong>HTML</strong></li>
+                    <li><strong>CSS</strong></li>
+                    <li><strong>Tools</strong></li>
+                </Ul>
+                <p>These are the skills i have for now. My current focus is mastering CSS, Javascript and building projects that solve real problems. I believe that strong foundation in HTML, CSS, and JS are the ke to becoming a versatile developer.</p>
+            </section>
+
+            <section id="Project">
+                <h6>My Project</h6>
+                <p>This is the project I have done so far, but hoping to do more. <b>A Personal Portfolio Website</b></p>A fully responsive portfolio built with HTML, and CSS. I used</p>
+            </section>
+            </div>
+
+            <div>
+            <section id="Contact">
+                <h5><b>My Contact</b></h5>
+                <form action="about.html">
+                <label for="name">Full Name</label><br>
+                <input type="text" id="name" required><br>
+
+                <label for="email">Email</label><br>
+                <input type="email" id="email" required><br>
+
+                <label for="tel">Tel</label><br>
+                <input type="tel" id="tel" required><br>
+
+                <label for="password">Password</label><br>
+                <input type="password" id="password" maxlength="10" minlength="10" required><br>
+
+                <label for="age">Age</label><br>
+                <input type="age" id="age" required><br>
+
+                <label for="datetime-local">datetime-local</label><br>
+                <input type="datetime-local" id="datetime-local" required><br>
+
+                <label for="week">Week</label><br>
+                <input type="week" id="week" required><br>
+
+                <label for="message">Message</label><br>
+                <input type="message" id="message" aria-rowindex="4" required> <br>
+
+                <label for="color">Color</label><br>
+                <input type="color" id="color" required><br>
+
+                <label for="range">Range</label><br>
+                <input type="range" id="range" minlength="1%" maxlength="10%"><br>
+
+                <label for="checkbox">Checkedbox</label><br>
+                <input type="checkbox" id="checkbox"> <br>
+
+                <label for="gender">Gender</label><br>
+                <input type="radio">Male 
+                <input type="radio">female <br>
+
+                <label for="file">File</label><br>
+                <input type="file" id="file" required><br>
+
+                <label for="reset">Reset</label><br>
+                <input type="rest" id="rest"><br>
+
+                <label for="submit">Submit Form</label><br>
+                <input type="submit" id="submit" required> <br>
+
+                <footer>
+                    <p>&copy; 2026 Chinwe Achor. Built with <a href="#">HTML</a> & <a href="#">CSS</a>.</p>
+                </footer>
+
+                 </form>
+            </section>
+        </div>
+    </main>
+</body>
+</html>

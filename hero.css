@@ -1,0 +1,135 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body, html{
+    scroll-behavior: smooth;
+    scroll-padding: 20px;
+}
+
+/* header styling */
+header{
+    width: 100dvw;
+    min-height: 50px;
+    background-image: linear-gradient(to right, rgba(85, 205, 85, 0.74), rgba(67, 123, 186, 0.459));
+    display: flex;
+    color: black;
+    justify-content: space-around;
+    align-items: center;
+    position: fixed;
+}
+
+nav > ul{
+    display: flex;
+    list-style-type: none;
+    padding-right: 40px;
+}
+
+nav li{
+    position: relative;
+}
+
+nav a{
+ padding: 10px;
+ text-decoration: none;
+ color: black;
+ display: block;
+ font-size: 0.8em;
+}
+
+.imageName{
+    display: flex;
+}
+
+.drop{
+    position: relative;
+    padding-top: 10px;
+    font-size: 0.8em;
+}
+
+.drop:hover .drop_down{
+    display: block;
+}
+
+.drop_down{
+    position: absolute;
+    display: none;
+}
+
+.drop_down a{
+    padding: 5px;
+}
+
+/* section styling-hero */
+
+.hero{
+    min-height: 100dvh;
+    background: lightseagreen url(Female_shoe.png) no-repeat bottom right fixed;
+    background-size: 50dvw 80dvh;
+    padding: 50px;
+    display: flex;
+    align-items: center;
+    color: black;
+}
+
+.hero_div{
+    width: 50dvw;
+}
+
+.hero_div > h1{
+    font-size: 4em;
+    font-family: sans-serif;
+    color: black;
+    animation: fade 3s ease-in 0s 1 alternate forwards;
+}
+
+.hero_div > h3{
+    text-align: center;
+    color: black;
+}
+
+.hero_div > p{
+    line-height: 20px;
+     font-size: 1.5em;
+     color: black;
+}
+
+/* section styling-about */
+
+.about{
+    min-height: 100dvh;
+    background-color: lightgreen;
+}
+
+/* section styling-skills */
+
+.skills{
+    min-height: 100dvh;
+    background-color: lightskyblue;
+}
+
+/* section styling-contact */
+
+.contact{
+    min-height: 100dvh;
+    background-color: lightgreen;
+}
+
+.footer{
+    min-height: 100dvh;
+    background-color: lightskyblue;
+}
+
+@keyframes fade{
+    from{
+        opacity: 0;
+        font-size: 0em;
+    }
+
+    to{
+        opacity: 1;
+        font-size: 1em;
+    }
+}

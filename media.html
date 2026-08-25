@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root{
+            --bgcolor: rgb(230, 102, 170);
+        }
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        .container{
+            border: 1px solid;
+            min-height: 300px;
+            display: grid;
+            grid-template-columns: auto;
+            grid-template-rows: 100px;
+        }
+
+        .items{
+            border: 1px solid;
+        }
+
+       
+        /* small screen-small phone */
+        /* small screen (max-width 480px) */
+        @media(max-width: 480px) {
+            .container{
+                grid-template-columns: auto;
+                background-color: orangered;
+            }
+        }
+
+        /* tablets and larger screen */
+        /* medium screen- min-width 768px */
+        @media(min-width:768px) {
+            .container{
+            grid-template-columns: auto auto;
+            background-color: aqua;
+        }
+    }
+
+         
+        /* laptop screen- min-width 1024px */
+        @media(min-width: 1024px) {
+            .container{
+                grid-template-columns: auto auto auto;
+                background-color: blueviolet;
+            }
+        }
+
+        /* larger desktop screen- min-width 1200px*/
+        @media screen and (min-width: 1200px) {
+            .container{
+                grid-template-columns: auto auto auto auto;
+                background-color: var(--bgcolor);
+            }
+        }
+    </style>
+</head>
+<body>
+   <div class="container">
+    <div class="items"></div>
+    <div class="items"></div>
+    <div class="items"></div>
+    <div class="items"></div>
+    <div class="items"></div>
+   </div>
+</body>
+</html>

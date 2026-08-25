@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aeroplane accelerating</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        div{
+            border: 1px solid;
+            margin: 10px;
+            width: 100dvw;
+            height: 300px;
+            position: relative;
+            background-image: linear-gradient(to bottom, rgb(160, 227, 244), #ffffff);
+
+        }
+
+        img{
+            position: absolute;
+            width: 200px;
+            height: 100px;
+            left: 0;
+            bottom: 0;
+            animation: aeroplane 15s ease-in-out 0.5s 1 alternate forwards;
+        }
+
+            /* animation-name: aeroplane;
+            animation-duration: 5s;
+            animation-timing-function: ease;
+            animation-delay: 0s;
+            animation-iteration-count: infinite;
+            animation-direction: normal;
+            animation-fill-mode: forwards; */
+
+        /* @keyframes aeroplane{
+           from{
+            transform: translateX(0);
+            transform: translateY(0);
+           }
+
+           to{
+            transform: translate(300px, -200px);
+           }
+        } */
+
+        @keyframes aeroplane{
+            0%{
+                transform: translateX(0);
+                transform: translateY(0);
+            }
+
+            30%{
+                transform: translate(400px, -300px);
+            }
+
+            60%{
+                transform: translate(400px, -300px);
+            }
+
+            100%{
+                transform: translate(1200px, -30px);
+            }
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="aeroplane.png" alt="logo">
+    </div>
+</body>
+</html>
