@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div id="let"></div>
+    <button onclick="changeText()">click to change content</button>
+    <button onclick="changeText3(30,12)">click to change content3</button>
+
+    <script>
+        let content = document.getElementById('let')
+        let content3 = document.querySelector('#let')
+
+        function changeText3(x,y){
+          let z = x * y;
+          content3.innerHTML = z;
+
+        }
+    </script>
+
+</body>
+</html>

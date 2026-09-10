@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+        <label for="name" id="name">What is your name?</label><input type="text" name="" id="name"><br>
+        <label for="age" id="age">How old are you?</label><input type="number" name="" id="age">
+        <div id="answer">
+        <button onclick= "showNameandAge()">submit</button>
+    </div>
+  <script>
+     let name = document.getElementById('name');
+     let age = document.getElementById('age');
+     let answer = document.querySelector('#answer');
+
+    function showNameandAge(){
+        let name = name.value;
+        let age = age.value;
+
+         answer.innerHTML = `My name is ${name}, and i am ${age} years old`;
+    }
+    </script>
+</body>
+</html>

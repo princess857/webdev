@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h2 id="head1">heading 2</h2>
+    <button id="btn1">click me</button>
+
+    <script>
+        let head1 = document.getElementById('head1');
+        let  btn1 = document.getElementById('btn1');
+
+        btn1.addEventListener("click", function(){
+            if(head1.innerHTML == "heading 2"){
+                head1.innerHTML == "woooow";
+                btn1.innerHTML = "show wooow"
+            }else{
+                head1.innerHTML = "heading 2"
+                btn1.innerHTML = "click me"
+            }
+        })
+    </script>
+</body>
+</html>

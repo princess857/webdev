@@ -1,0 +1,38 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1 id="headi1">hello world</h1>
+    <!-- <h2 id="headi2">content</h2> -->
+     <h2 id="headi2"></h2>
+    <button onclick="changeText()">click to change content</button>
+    <button onclick="changeText2(40,20)">click to change content2</button>
+
+    <script>
+        let content = document.getElementById('headi1')
+        let content2 = document.querySelector('#headi2')
+
+        function changeText(){
+            content2.innerHTML = "woooooow"
+        }
+
+        // function changeText2(){
+        //     // content.innerHTML = "hi"
+        //     let x = 5;
+        //     let y = 30;
+        //     let z = x + y;
+        //     content2.innerHTML = z
+        // }
+
+        function changeText2(x,y){
+            let z = x + y;
+            content2.innerHTML = z;
+            alert("the answer is: " + z)
+        }
+    </script>
+</body>
+</html>

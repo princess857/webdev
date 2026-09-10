@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        div{
+            width: 300px;
+            height: 300px;
+            border: 1px solid;
+            border-radius: 15px;
+            align-items: center;
+        }
+
+        #bulb{
+            width: 200px;
+            height: 200px;
+            align-items: center;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <img src="bulb_on.png" alt="Bulb" id="bulb">
+    </div>
+    <button id="btn">ON</button>
+
+    <script>
+        let bulb = document.getElementById('bulb')
+        let btn = document.getElementById('btn');
+
+        btn.addEventListener("image", function(){
+            if(bulb.scr.includes == "bulb_on.png"){
+                bulb.scr = "bulb_off.png";
+                btn.innerHTML = "OFF";
+                return;
+            }else{
+                bulb.scr = "bulb_on.png";
+                btn.innerHTML = "ON";
+                return;
+            }
+        })
+    </script>
+</body>
+</html>

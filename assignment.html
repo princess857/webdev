@@ -19,6 +19,7 @@
             width: 300px;
             min-height: 400px;
             grid-template-columns: repeat(4, 1fr);
+            grid-template-rows: repeat(6, 1fr);
             border-radius: 10px;
             gap: 5px;
             text-align: center;
@@ -30,15 +31,21 @@
             border: 1px solid;
             border-radius: 10px;
             min-height: 50px;
-            display: grid;
+            /* display: grid; */
             display: flex;
             align-items: center;
             justify-content: center;
+            font-weight: bold;
+            cursor: pointer;
         }
 
         .item0{
             grid-area: 1/1/2/5;
             background-color: grey;
+            justify-content: flex-end;
+            padding-right: 15px;
+            cursor: default;
+            font-size: 32px;
         }
 
         .itemi{
@@ -68,24 +75,41 @@
 </head>
 <body>
     <div class="grid-container">
-        <div class="grid-item item0">60</div>
-        <div class="grid-item itemC">C</div>
-        <div class="grid-item">9</div>
-        <div class="grid-item">8</div>
-        <div class="grid-item itemL">x</div>
-        <div class="grid-item">7</div>
-        <div class="grid-item">6</div>
-        <div class="grid-item">5</div>
-        <div class="grid-item">4</div>
-        <div class="grid-item">3</div>
-        <div class="grid-item">2</div>
-        <div class="grid-item">1</div>
-        <div class="grid-item itemi">+</div>
-        <div class="grid-item">0</div>
-        <div class="grid-item">/</div>
-        <div class="grid-item itemL">-</div>
-        <div class="grid-item itemL">.</div>
-        <div class="grid-item item">=</div>
+        <button class="grid-item item0"></button> 
+        <button class="grid-item itemC" onclick="calc('C')">C</button>
+        <button class="grid-item" onclick="calc (9)">9</button>
+        <button class="grid-item" onclick="calc (8)">8</button>
+        <button class="grid-item itemL" onclick="calc('*')">X</button>
+        <button class="grid-item" onclick="calc(7)">7</button>
+        <button class="grid-item" onclick="calc(6)">6</button>
+        <button class="grid-item" onclick="calc(5)">5</button>
+        <button class="grid-item" onclick="calc(4)">4</button>
+        <button class="grid-item" onclick="calc(3)">3</button>
+        <button class="grid-item" onclick="calc(2)">2</button>
+        <button class="grid-item" onclick="calc(1)">1</button>
+        <button class="grid-item itemi" onclick="calc('+')">+</button>
+        <button class="grid-item" onclick="calc(0)">0</button>
+        <button class="grid-item" onclick="calc('/')">/</button>
+        <button class="grid-item itemL" onclick="calc('-')">-</button>
+        <button class="grid-item itemL" onclick="calc('.')">.</button>
+        <button class="grid-item item" onclick="calc('=')">=</button>
     </div>
+         
+    <script>
+    let display = document.querySelector('.item0');
+
+    function calc(num){
+        
+        if(num == '='){
+            display.innerHTML  = eval(display.innerHTML);
+            return;
+        }else if(num == 'C'){
+            display.innerHTML = '';
+            return;
+        }else{
+         display.innerHTML += num;
+        }
+    }
+   </script>
 </body>
 </html>
